@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="bn">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <div class="main">
+      <div class="top-bar">
+        <h2>🌤️ Weather App</h2>
+        <div class="btn-group">
+          <button id="unitToggle" class="btn small">°C</button>
+          <button id="geoBtn" class="btn small">📍</button>
+        </div>
+      </div>
+
+      <form id="searchForm">
+        <input id="cityInput" type="text" placeholder="Dhaka " />
+        <button id="searchBtn" type="submit" class="btn">Search</button>
+      </form>
+
+      <div id="resultArea" class="result hidden">
+        <div class="city" id="Dhaka">--</div>
+        <div class="temp" id="temp">--</div>
+        <div class="desc" id="desc">--</div>
+        <div class="details" id="details">--</div>
+      </div>
+    </div>
+
+    <footer>Data source: OpenWeatherMap</footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
